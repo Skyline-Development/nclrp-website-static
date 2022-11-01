@@ -127,12 +127,6 @@ body {
   text-align: right;
 }
 
-.section-text h3 {
-  font-weight: 500;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
 @media (max-width: 750px) {
   .section {
     display: block;
