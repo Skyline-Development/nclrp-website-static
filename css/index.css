@@ -71,6 +71,10 @@ body {
   padding-top: 15px;
 }
 
+.subtitle-extra {
+  margin-top: 50px;
+}
+
 .btn-group {
   width: 100%;
   text-align: center;
@@ -109,7 +113,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 40px 10px;
+  margin: 0 10px;
 }
 
 .section-img img {
@@ -124,7 +128,18 @@ body {
 .section-text {
   font-size: 20px;
   padding: 0 20px;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
   text-align: right;
+}
+
+.left-img {
+  order: 2;
 }
 
 @media (max-width: 750px) {
