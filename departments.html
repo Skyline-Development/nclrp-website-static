@@ -34,7 +34,8 @@
 
     <div class="section">
       <div class="section-img">
-        <img class="circle" src="/images/civ-logo-gif.gif" alt="Civ Logo Gif">
+        <img style="display: none;" id="civLogo" class="circle" src="/images/civ-logo.jpg" alt="Civ Logo">
+        <img id="civLogoGif" class="circle" src="/images/civ-logo-gif.gif" alt="Civ Logo Gif">
       </div>
       <div class="section-text left">
         <p>Civilian Department (Civs), is where you can work jobs, get arrested, commit crimes...Everyday! This department is responsible for creating and doing scenes for Fire and LEO to have something to do! Here you will be paired (or be solo) to create some of the wildest (but realistic) scenes you can think of! Join The Civilian Department Today!</p>
@@ -65,6 +66,12 @@
     
   </div>
 
+  <script>
+    if (window.innerWidth < 768) {
+      document.getElementById("civLogoGif").style.display = "none";
+      document.getElementById("civLogo").style.display = "";
+    }
+  </script>
 </body>
 
 </html>
