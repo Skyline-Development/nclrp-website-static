@@ -138,8 +138,8 @@ body {
   text-align: right;
 }
 
-.left-img {
-  order: 2;
+.circle {
+  border-radius: 50%;
 }
 
 @media (max-width: 750px) {
