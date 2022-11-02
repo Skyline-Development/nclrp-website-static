@@ -7,8 +7,6 @@ app.use(express.static('public'));
 app.enable("trust proxy");
 app.set("etag", false);
 
-const PORT = process.env.PORT;
-
 app.get('/', (req, res) => {
   res.render('index')
 })
@@ -21,6 +19,6 @@ app.get('/departments', (req, res) => {
   res.render('departments')
 })
 
-app.listen(PORT || 8080, '0.0.0.0');
+app.listen(5000, '0.0.0.0');
 
-console.log('APPLICATION LIVE ON: http://192.168.1.16:8080');
+console.log('APPLICATION LIVE');
