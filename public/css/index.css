@@ -196,9 +196,9 @@ body {
 }
 
 .fa-brands {
-  padding: 20px;
-  font-size: 20px;
-  width: 20px;
+  padding: 15px;
+  font-size: 30px;
+  width: 30px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
@@ -217,7 +217,7 @@ body {
 
 /* Discord */
 .fa-discord {
-  padding-left: 18px;
+  padding-left: 13px;
   background: #5865F2;
   color: white;
 }
