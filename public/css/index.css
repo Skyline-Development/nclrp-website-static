@@ -231,11 +231,48 @@ body {
 /* TikTok */
 .fa-tiktok {
   background: #25F4EE;
-  color: white;
+  color: black;
 }
 
 /* Twitter */
 .fa-twitter {
   background: #F5F8FA;
   color: #1DA1F2;
+}
+
+
+.media-scroller {
+  display: grid;
+  gap: 20px;
+  grid-auto-flow: column;
+  grid-auto-columns: 32%;
+  padding: 0 20px 20px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+.media-element {
+  display: grid;
+  grid-template-rows: min-content;
+  gap: 20px;
+  padding: 20px;
+  background: #231a1e;
+  border-radius: 20px;
+}
+
+.media-element > img {
+  inline-size: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 15px;
+  user-select: none;
+}
+
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 1rem;
+}
+
+.snaps-inline > * {
+  scroll-snap-align: start;
 }
