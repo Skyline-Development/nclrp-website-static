@@ -8,8 +8,8 @@ app.enable("trust proxy");
 app.set("etag", false);
 
 function customHeaders(req, res, next) {
-  app.disable('x-powered-by');
-  res.setHeader('X-Powered-By', 'NCLRP V2.9');
+  app.disable('X-powered');
+  res.setHeader('X-powered', 'NCLRP');
 
   next();
 }
@@ -17,17 +17,17 @@ function customHeaders(req, res, next) {
 app.use(customHeaders);
 
 app.get('/', (req, res) => {
-  res.removeHeader('X-Powered-By');
+  res.removeHeader('X-powered');
   res.render('index')
 })
 
 app.get('/about-us', (req, res) => {
-  res.removeHeader('X-Powered-By');
+  res.removeHeader('X-powered');
   res.render('about-us')
 })
 
 app.get('/departments', (req, res) => {
-  res.removeHeader('X-Powered-By');
+  res.removeHeader('X-powered');
   res.render('departments')
 })
 
