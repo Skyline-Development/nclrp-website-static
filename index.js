@@ -9,7 +9,6 @@ app.set("etag", false);
 
 function customHeaders(req, res, next) {
   app.disable('x-powered-by');
-
   res.setHeader('X-Powered-By', 'NCLRP V2.9');
 
   next();
@@ -18,14 +17,17 @@ function customHeaders(req, res, next) {
 app.use(customHeaders);
 
 app.get('/', (req, res) => {
+  res.removeHeader('X-Powered-By');
   res.render('index')
 })
 
 app.get('/about-us', (req, res) => {
+  res.removeHeader('X-Powered-By');
   res.render('about-us')
 })
 
 app.get('/departments', (req, res) => {
+  res.removeHeader('X-Powered-By');
   res.render('departments')
 })
 
