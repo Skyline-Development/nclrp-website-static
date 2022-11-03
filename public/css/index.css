@@ -215,6 +215,13 @@ body {
 
 /* Set a specific color for each brand */
 
+/* Discord */
+.fa-discord {
+  padding-left: 18px;
+  background: #5865F2;
+  color: white;
+}
+
 /* Instagram */
 .fa-instagram {
   background: #8a3ab9;
