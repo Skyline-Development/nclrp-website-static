@@ -7,6 +7,16 @@ app.use(express.static('public'));
 app.enable("trust proxy");
 app.set("etag", false);
 
+function customHeaders(req, res, next) {
+  app.disable('x-powered-by');
+
+  res.setHeader('X-Powered-By', 'NCLRP V2.9');
+
+  next();
+}
+
+app.use(customHeaders);
+
 app.get('/', (req, res) => {
   res.render('index')
 })
