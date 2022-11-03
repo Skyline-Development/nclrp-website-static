@@ -9,6 +9,11 @@ app.use(express.static('public'));
 app.enable("trust proxy");
 app.set("etag", false);
 
+app.use(function (req, res, next) {
+  res.removeHeader("X-Powered-By");
+  next();
+});
+
 app.get('/', (req, res) => {
   res.render('index')
 })
