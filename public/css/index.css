@@ -5,18 +5,25 @@
   padding: 0;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   display: block;
   font-family: 'Poppins', sans-serif;
-  background-image: url("../images/city-bg.jpg");
+  background-image: url("../images/city-bg-grad.jpg");
   background-size: cover;
-  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-color: #241c1e;
 }
 
 .header {
   overflow: hidden;
   background-color: rgba(26, 19, 22, 0.95);
   padding: 20px 10px;
+  min-height: 50px;
 }
 
 .header a {
@@ -50,11 +57,18 @@ body {
   float: right;
 }
 
+.middle-content {
+  min-height: 100%;
+  margin-bottom: -100px;
+}
+
 .main {
   width: 80vw;
   background: rgba(26, 19, 22, 0.95);
   color: #fff;
-  margin: 30px auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
   padding: 5px;
 }
 
@@ -127,6 +141,7 @@ body {
 .section-text {
   font-size: 20px;
   padding: 0 20px;
+  text-align: center;
 }
 
 .left {
@@ -158,4 +173,56 @@ body {
   .section-text {
     text-align: center;
   }
+}
+
+.push {
+  height: 130px;
+}
+
+.footer {
+  height: 100px;
+  background-color: rgba(26, 19, 22, 0.95);
+}
+
+.socials-group {
+  margin: 0 auto;
+  padding-top: 25px;
+  width: fit-content;
+  display: flex;
+}
+
+.socials-group a {
+  text-decoration: none;
+}
+
+.fa-brands {
+  padding: 20px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.socials-group div:first-child {
+  margin-left: 0;
+}
+
+.socials-group div:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Instagram */
+.fa-instagram {
+  background: #8a3ab9;
+  color: white;
+}
+
+/* TikTok */
+.fa-tiktok {
+  background: #25F4EE;
+  color: white;
 }
