@@ -2,8 +2,9 @@ const express = require("express")
 const app = express()
 
 // app.disable('x-powered-by');
-app.use(function (req, res, next) {  
-  res.header("X-powered-by", "Blood, sweat, and tears.");
+app.use(function (req, res, next) {   
+  res.removeHeader("x-powered-by");
+  console.log(res);
   next();
 });
 
