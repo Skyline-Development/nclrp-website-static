@@ -230,7 +230,7 @@ body {
 
 /* TikTok */
 .fa-tiktok {
-  background: #25F4EE;
+  background: #ff0050;
   color: black;
 }
 
@@ -238,6 +238,18 @@ body {
 .fa-twitter {
   background: #F5F8FA;
   color: #1DA1F2;
+}
+
+/* Patreon */
+.fa-patreon {
+  background: #fff;
+  color: #FF424D;
+}
+
+/* Paypal */
+.fa-paypal {
+  background: #fff;
+  color: #0079C1;
 }
 
 
