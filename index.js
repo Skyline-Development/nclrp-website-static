@@ -3,7 +3,7 @@ const app = express()
 
 
 app.disable('x-powered-by')
-app.disable('x-aspnet-version')
+app.disable('server')
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
 app.use(express.static('public'));
@@ -11,7 +11,6 @@ app.use(express.static('public'));
 // app.set("etag", false);
 
 app.get('/', (req, res) => {
-  console.log(res);
   res.render('index')
 })
 
