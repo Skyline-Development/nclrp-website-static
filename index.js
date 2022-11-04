@@ -3,7 +3,6 @@ const app = express()
 
 
 app.disable('x-powered-by')
-app.disable('server')
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
 app.use(express.static('public'));
