@@ -1,12 +1,9 @@
 const express = require("express")
 const app = express()
 
-// app.disable('x-powered-by');
-app.use(function (req, res, next) {   
-  res.removeHeader("x-powered-by");
-  next();
-});
 
+app.disable('x-powered-by')
+app.disable('web-version')
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
 app.use(express.static('public'));
@@ -14,6 +11,7 @@ app.use(express.static('public'));
 // app.set("etag", false);
 
 app.get('/', (req, res) => {
+  console.log(res);
   res.render('index')
 })
 
