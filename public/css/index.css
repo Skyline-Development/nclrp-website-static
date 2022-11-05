@@ -83,6 +83,10 @@ br {
   font-size: 35px;
 }
 
+.main .small-title {
+  font-size: 30px;
+}
+
 .main .subtitle {
   font-weight: 300;
   text-align: center;
